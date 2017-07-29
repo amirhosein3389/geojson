@@ -9,4 +9,16 @@
     font-style: normal;
 
 }
+/*this is the format used to define considered font:it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi*/
+@font-face {
+    font-family: 'Yekan';
+    src: url('mplus/Yekan.eot');
+    src: url('mplus/Yekan.eot') format('embedded-opentype'),
+         url('mplus/Yekan.woff') format('woff'),
+         url('mplus/Yekan.ttf') format('truetype'),
+         url('mplus/Yekan.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 

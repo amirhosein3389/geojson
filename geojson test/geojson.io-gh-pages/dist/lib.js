@@ -8340,7 +8340,7 @@ L.GeometryUtil = L.extend(L.GeometryUtil || {}, {
 	readableDistance: function (distance, isMetric) {
 		var distanceStr;
 
-		if (isMetric) {
+		 /* if (isMetric) {
 			// show metres when distance is < 1km, then show km
 			if (distance > 1000) {
 				distanceStr = (distance  / 1000).toFixed(2) + ' km';
@@ -8356,6 +8356,15 @@ L.GeometryUtil = L.extend(L.GeometryUtil || {}, {
 				distanceStr = Math.ceil(distance) + ' yd';
 			}
 		}
+    */
+			// show metres when distance is < 1km, then show km
+      //this change is for display distance only in meter and kilometer : it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi
+			if (distance > 1000) {
+				distanceStr = (distance  / 1000).toFixed(2) + ' km';
+			} else {
+				distanceStr = Math.ceil(distance) + ' m';
+			}
+		 
 
 		return distanceStr;
 	}

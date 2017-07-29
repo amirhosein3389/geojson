@@ -15,17 +15,21 @@
     position:absolute;
     top:0;
     bottom:0;
-    left:0;
-    right:40%;
+    right:-420px;/*right: 40%*/
+    left:416px;/*left: 0*/
+    /*two line above are for make ltr the site:it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi*/
+
 }
 
 .right {
     overflow-x:hidden;
     position:absolute;
+    direction: rtl;
+    left:0;/*right:0;*/
+    /*two line above are for make ltr the site:it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi */
     bottom:0;
     top:0;
-    right:0;
-    width:40%;
+    width:415px;
     min-width:400px;
     box-sizing:border-box;
     background:#fff;
@@ -35,7 +39,9 @@
 }
 
 body.fullscreen .map {
-    right:0;
+    /*right:0;*/
+    left:0;/*this line is for make ltr the site(move combo box menu to the left):it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi*/
+
 }
 
 body.fullscreen .right {
@@ -52,7 +58,7 @@ body.fullscreen .file-bar .fr {
 
 body.fullscreen .leaflet-control-mapbox-geocoder { margin-top:50px; }
 
-.deemphasize { color: #888;}
+.deemphasize { color: #000;}
 
 p.intro-hint {
     margin:10px auto;
@@ -69,6 +75,7 @@ p.intro-hint:hover {
 
 .right .pane {
     position:absolute;
+    direction: ltr;/*this line is for make ltr the site:it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi*/
     top:40px;
     bottom:0;
     width:100%;
@@ -79,7 +86,12 @@ p.intro-hint:hover {
  * .right ---------------------------------------------------------------------
  */
 .top {
-    background:#eee;
+    /*background:#eee;*/
+    background:#fff;/*this line is for change the color of the div with class top :it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi*/
+    float:left;
+    width: 415px;
+    direction: rtl
+    /*lines above are for make ltr the site:it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi*/
 }
 
 .top .info {
@@ -115,6 +127,7 @@ button {
 button.active {
     background:#34495e;
     color:#fff;
+    margin-right: 60px
 }
 
 button.major {
@@ -157,7 +170,8 @@ button.delete-invert:hover {
 .top .collapse-button {
     position:absolute;
     top:0;
-    left:0;
+    /*left: 0;*/
+    left:380px;/*this line is for make ltr the site:it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi*/
     width:28px;
     height:40px;
     line-height:30px;
@@ -308,8 +322,11 @@ th button:hover {
 
 .layer-switch {
     position:absolute;
+    direction: rtl;
+    right: 360px;/* left:0px;*/
+    /*two line above are for make ltr the site:it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi */
     bottom:0px;
-    left:0px;
+    
 }
 
 .blank-banner {
@@ -330,8 +347,10 @@ textarea.full-width {
 
 .file-bar {
     position:absolute;
+    direction: rtl;
+    right:0;/*left:0;
+    /*two line above are for make ltr the site:it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi*/
     top:0;
-    left:0;
     height:40px;
     box-sizing:border-box;
     line-height:40px;
@@ -346,6 +365,7 @@ textarea.full-width {
 
 .file-bar .name .filename {
     margin-left:10px;
+    margin-right: 10px;
 }
 
 .clickable:hover,
@@ -380,6 +400,7 @@ body.dragover:after {
 
 .file-bar div.item {
     display:inline-block;
+    font-family: 'Yekan';/*it is one font used to persian item menu:it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi*/
 }
 
 .file-bar div.item a.parent {
@@ -536,13 +557,12 @@ div.children a {
         display:none;
     }
     .share, .download, .map {
-        right:50%;
+       
     }
     .right {
-        width:50%;
-    }
+        right: 50%    }
     .file-bar {
-        right:50%;
+        
     }
 }
 

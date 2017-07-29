@@ -192,7 +192,10 @@ Details: http://www.positioniseverything.net/easyclearing.html
 .clearfix { display: inline-block; }
 .hide { display:none; }
 .fl { float:left; }
-.fr { float:right; }
+.fr {
+    /*float:right;*/ 
+    float:left; /*this line is for make ltr the site:it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi*/
+    }
 .center { text-align:center; }
 .text-right { text-align: right;}
 

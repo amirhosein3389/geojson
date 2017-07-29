@@ -79,16 +79,33 @@
   body { display: none; }
   </style>
 </head>
-<body id='geojsonio-body'>
+<body onload="collapse()" id='geojsonio-body'><!--this line is for close combo box menu when site loaded(description is eight lines below):it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi-->
 
 <div class='geojsonio'></div>
-
+<!--<script>
+if (self == top) {
+  document.getElementsByTagName ("body")[0].style.display = 'block';
+} else {
+  top.location = self.location;
+}
+</script>-->
 <script>
 if (self == top) {
   document.getElementsByTagName ("body")[0].style.display = 'block';
 } else {
   top.location = self.location;
 }
+//description of collapse function
+function collapse() {
+                d3.select('body').classed('fullscreen',
+                    !d3.select('body').classed('fullscreen'));
+                var full = d3.select('body').classed('fullscreen');
+                d3.select(this)
+                    .select('.icon')
+                    .classed('icon-caret-up', !full)
+                    .classed('icon-caret-down', full);
+                context.map.invalidateSize();
+            }
 </script>
 <script src='dist/delegate.js'></script>
 <script src='dist/lib.js'></script>
