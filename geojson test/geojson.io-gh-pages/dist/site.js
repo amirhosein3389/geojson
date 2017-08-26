@@ -31674,7 +31674,8 @@ require = (function e(t, n, r) {
 
                 top
                     .append('div')
-                    .attr('class', 'user fr pad1 deemphasize')
+                    /*.attr('class', 'user fr pad1 deemphasize')*/
+                    .attr('class', 'user fr pad1 disp deemphasize')/*this line is for hide the anon|login div*/ */
                     .call(userUi(context));
 
                 top
@@ -31956,7 +31957,7 @@ require = (function e(t, n, r) {
                     var filename = name.append('span')
                         .attr('class', 'filename')
                         .attr('class', 'deemphasize')
-                        .text('  ذخیره نشده');
+                        .text('  ذخیره نشده');/*this line is for translate unsaved to persian*/
                 }
 
                 function clickGistSave() {
@@ -32169,7 +32170,7 @@ require = (function e(t, n, r) {
                         type = data.type,
                         path = data.path;
                     if (mapboxAPI || githubAPI) filename
-                        .text(path ? path : '  ذخیره نشده')
+                        .text(path ? path : '  ذخیره نشده')/*this line is for translate unsaved to persian*/
                         .classed('deemphasize', context.data.dirty);
                     if (mapboxAPI || githubAPI) filetype
                         .attr('href', data.url)
