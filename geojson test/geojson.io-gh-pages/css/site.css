@@ -58,7 +58,10 @@ body.fullscreen .file-bar .fr {
 
 body.fullscreen .leaflet-control-mapbox-geocoder { margin-top:50px; }
 
-.deemphasize { color: #000;}
+.deemphasize { 
+    color: #000;
+    font-family: 'Yekan';
+}
 
 p.intro-hint {
     margin:10px auto;

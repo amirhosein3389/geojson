@@ -31955,7 +31955,8 @@ require = (function e(t, n, r) {
 
                     var filename = name.append('span')
                         .attr('class', 'filename')
-                        .text('ذخیره نشده');
+                        .attr('class', 'deemphasize')
+                        .text('  ذخیره نشده');
                 }
 
                 function clickGistSave() {
@@ -32168,7 +32169,7 @@ require = (function e(t, n, r) {
                         type = data.type,
                         path = data.path;
                     if (mapboxAPI || githubAPI) filename
-                        .text(path ? path : 'unsaved')
+                        .text(path ? path : '  ذخیره نشده')
                         .classed('deemphasize', context.data.dirty);
                     if (mapboxAPI || githubAPI) filetype
                         .attr('href', data.url)
