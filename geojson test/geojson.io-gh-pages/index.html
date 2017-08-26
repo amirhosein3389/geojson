@@ -79,7 +79,8 @@
   body { display: none; }
   </style>
 </head>
-<body onload="collapse()" id='geojsonio-body'><!--this line is for close combo box menu when site loaded(description is eight lines below):it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi-->
+<!--<body class='fullscreen' onload="collapse()" id='geojsonio-body'>-->
+<body class='fullscreen' id='geojsonio-body'><!--this line is for close combo box menu when site loaded(description is eight lines below):it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi and lastest modified in 2017.08.26-->
 
 <div class='geojsonio'></div>
 <!--<script>
@@ -95,17 +96,17 @@ if (self == top) {
 } else {
   top.location = self.location;
 }
-//description of collapse function
-function collapse() {
+//description of collapse function:it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi and lastest modified in 2017.08.26
+/*function collapse() {
                 d3.select('body').classed('fullscreen',
                     !d3.select('body').classed('fullscreen'));
-                var full = d3.select('body').classed('fullscreen');
+                var full = d3.select('body').classed('');
                 d3.select(this)
                     .select('.icon')
                     .classed('icon-caret-up', !full)
                     .classed('icon-caret-down', full);
                 context.map.invalidateSize();
-            }
+            }*/
 </script>
 <script src='dist/delegate.js'></script>
 <script src='dist/lib.js'></script>

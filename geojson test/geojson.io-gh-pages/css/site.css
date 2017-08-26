@@ -15,15 +15,15 @@
     position:absolute;
     top:0;
     bottom:0;
-    right:-420px;/*right: 40%*/
+    right:-0px;/*right: 40%*/
     left:416px;/*left: 0*/
-    /*two line above are for make ltr the site:it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi*/
+    /*two line above are for make ltr the site:it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi and lastest modified in 2017.08.26*/
 
 }
 .disp {
     display: none
 
-}
+}/*this css is created for hide the anon|login div:it's created in 2017.08.26 by sajjad ghoamipour & morteza shahbazi*/
 .right {
     overflow-x:hidden;
     position:absolute;
@@ -63,7 +63,7 @@ body.fullscreen .leaflet-control-mapbox-geocoder { margin-top:50px; }
 
 .deemphasize { 
     color: #000;
-    font-family: 'Yekan';/*this line is for change font of unsaved*/
+    font-family: 'Yekan';/*this line is for change font of unsaved:it's created in 2017.08.26 by sajjad ghoamipour & morteza shahbazi*/
 }
 
 p.intro-hint {
@@ -331,8 +331,8 @@ th button:hover {
 .layer-switch {
     position:absolute;
     direction: rtl;
-    right: 360px;/* left:0px;*/
-    /*two line above are for make ltr the site:it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi */
+    right: 0px;/* left:0px;*/
+    /*two line above are for make ltr the site:it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi and lastest modified in 2017.08.26 */
     bottom:0px;
     
 }
