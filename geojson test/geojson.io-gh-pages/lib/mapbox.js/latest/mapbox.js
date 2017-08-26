@@ -7836,7 +7836,7 @@
                 color = (fp["marker-color"] || "7e7e7e").replace("#", "");
             return L.icon({
                 //iconUrl: url("/marker/"+"pin-"+size.charAt(0)+symbol+"+"+color+(L.Browser.retina?"@2x":"")+".png",options&&options.accessToken),iconSize:sizes[size],iconAnchor:[sizes[size][0]/2,sizes[size][1]/2],popupAnchor:[0,-sizes[size][1]/2]
-                iconUrl: 'http://localhost/geojson test/7.png'/*this line is for fetch the marker from own site :it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi*/
+             iconUrl: 'http://localhost/geojson test/geojson.io-gh-pages/lib/mapbox.js/latest/images/1.png', iconSize: sizes[size], iconAnchor: [sizes[size][0] / 2, sizes[size][1] / 2], popupAnchor: [0, -sizes[size][1] / 2] /*this line is for fetch the marker from own site :it's created in 2017.07.26 by sajjad ghoamipour & morteza shahbazi and lastest modified in 2017.08.26*/
             })
         }
 
